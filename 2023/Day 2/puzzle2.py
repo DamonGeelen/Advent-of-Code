@@ -43,21 +43,29 @@ for game in games:
     games_dict[game] = round_list
 
 """
-Now we can iterate through the list to find which games would have been 
-possible, and add these game numbers to our sum to find our answer.
+Now we can iterate through the list to find the fewest possible cubes for each 
+game, and find the sum of these powers.
 """
 sum = 0
 
 for game in games_dict:
 
-    possible = True
+    red = 0
+    green = 0
+    blue = 0
 
     for round in games_dict[game]:
-        if int(round["red"]) > 12 or int(round["green"]) > 13 or int(round["blue"]) > 14:
-            possible = False
+        if int(round["red"]) > red:
+            red = int(round["red"])
+        
+        if int(round["green"]) > green:
+            green = int(round["green"])
 
-    if possible:
-        sum += int(game)
+        if int(round["blue"]) > blue:
+            blue = int(round["blue"])
+        
+    power = red * green * blue
+    sum += power
 
-print(f"The sum of the IDs of those games is {sum}.")
+print(f"The sum of the power of these sets is {sum}.")
 
