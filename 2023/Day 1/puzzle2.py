@@ -1,6 +1,10 @@
 with open("input.txt", "r") as file:
     content = file.read()
 
+# Replace written numbers with the numerical character.
+# Note that the first and last letter are left in the string
+# to preserve any overlapping number names (eg. "oneight")
+
 content = content.replace('zero', 'z0o')
 content = content.replace('one', 'o1e')
 content = content.replace('two', 't2o')
