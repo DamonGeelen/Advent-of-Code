@@ -10,22 +10,16 @@ The repository is organized by year, with a separate folder for each year's puzz
 
 - **2023**: Contains solutions for the puzzles released in 2023.
   - **Day 1**
-    - **Puzzle 1**
-      - `input.txt`: Puzzle input for the first part.
-      - `solution.py`: Python script for solving the first part.
-    - **Puzzle 2**
-      - `input.txt`: Puzzle input for the second part.
-      - `solution.py`: Python script for solving the second part.
+    - `input.txt`: Puzzle input for both parts.
+    - `puzzle1.py`: Python script for solving the first part.
+    - `puzzle2.py`: Python script for solving the second part.
   - **Day 2**
-    - **Puzzle 1**
-      - `input.txt`: Puzzle input for the first part.
-      - `solution.py`: Python script for solving the first part.
-    - **Puzzle 2**
-      - `input.txt`: Puzzle input for the second part.
-      - `solution.py`: Python script for solving the second part.
+    - `input.txt`: Puzzle input for both parts.
+    - `puzzle1.py`: Python script for solving the first part.
+    - `puzzle2.py`: Python script for solving the second part.
   - ... (repeat for each day)
 
-Feel free to explore the individual day and puzzle folders to find the solutions and input files for each day's challenges.
+Feel free to explore the individual day folders to find the solutions and input files for each day's challenges.
 
 ## Getting Started
 If you're new to Advent of Code or want to participate yourself, you can visit the [Advent of Code website](https://adventofcode.com/) to access the daily puzzles. Remember not to peek at the solutions before attempting to solve the puzzles on your own!
@@ -34,15 +28,18 @@ If you're new to Advent of Code or want to participate yourself, you can visit t
 The solutions are implemented in Python, and you can run them by following these steps:
 
 1. Make sure you have Python installed on your machine. You can download it from [python.org](https://www.python.org/).
-2. Navigate to the specific day and puzzle folder (e.g., `2023/Day 1/Puzzle 1`) to find the solution for that specific puzzle.
-3. Run the Python script by executing the following command in your terminal or command prompt:
+2. Navigate to the specific day folder (e.g., `2023/Day 1`) to find the solutions for that day.
+3. Run the Python scripts by executing the following commands in your terminal or command prompt:
+
+For Puzzle 1:
+   ```bash
+   python puzzle1.py
+   ```
+For Puzzle 2:
 
    ```bash
-   python solution.py
+   python puzzle2.py
    ```
-
-Replace solution.py with the actual filename of the Python script containing the solution for that puzzle.
-
 Make sure you have the necessary input files or input data as required by the specific puzzle.
 
 ## Contributing
