@@ -1,6 +1,6 @@
 # Advent of Code Solutions
 
-Welcome to my Advent of Code solutions repository! In this repository, you'll find my solutions to the daily puzzles from the annail Advent of Code events.
+Welcome to my Advent of Code solutions repository! In this repository, you'll find my solutions to the daily puzzles from the annual Advent of Code events.
 
 ## About Advent of Code
 [Advent of Code](https://adventofcode.com/) is an annual coding challenge that takes place in December. Each day, a new programming puzzle is released, and participants are invited to solve it using their programming skills. It's a fun and engaging way to improve your coding abilities and problem-solving skills.
