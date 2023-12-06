@@ -13,7 +13,7 @@ def extract_num(i, j, k, lines):
 
     # Search to the right.
     pos = k + 1
-    if j + pos < len(lines[i]) and not lines[i][j + pos].isnumeric():
+    if pos < 2 and j + pos < len(lines[i]) and not lines[i][j + pos].isnumeric():
         pos += 1
         count += 1
         nums.append("")
@@ -65,9 +65,10 @@ for i in range(len(lines)):
                 k = -1
                 while k < 2:
                     # If a number is found, append it to nums, and update the search location.
-                    if lines[i - 1][j + k].isnumeric():
+                    if j + k >= 0 and lines[i - 1][j + k].isnumeric():
                         new_nums, k = extract_num(i - 1, j, k, lines)
                         nums += new_nums
+                        print(nums)
                     k += 1
 
             # Search the line below the symnbol.
@@ -75,9 +76,10 @@ for i in range(len(lines)):
                 k = -1
                 while k < 2:
                     # If a number is found, append it to nums, and update the search location.
-                    if lines[i + 1][j + k].isnumeric():
+                    if j + k >= 0 and lines[i + 1][j + k].isnumeric():
                         new_nums, k = extract_num(i + 1, j, k, lines)
                         nums += new_nums
+                        print(nums)
                     k += 1
             
             nums = [num for num in nums if num]
