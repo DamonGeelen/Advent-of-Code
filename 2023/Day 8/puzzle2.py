@@ -38,6 +38,6 @@ while len(counts) < len(current_nodes):
     for j in range(n):
         if current_nodes[j][-1] == "Z":
             counts.append(count)
-
+            
 answer = lcm(counts[0], counts[1], counts[2], counts[3], counts[4], counts[5])
 print(f"{answer} steps are required before you're only on nodes that end with Z.")
